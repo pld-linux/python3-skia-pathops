@@ -1,0 +1,12 @@
+--- skia-pathops-0.7.2/setup.py.orig	2021-11-30 16:58:56.000000000 +0100
++++ skia-pathops-0.7.2/setup.py	2021-12-19 08:10:42.361396989 +0100
+@@ -250,6 +250,9 @@ def build_skia(build_base):
+     build_dir = os.path.join(build_base, skia_dir)
+     build_skia_py = os.path.join(skia_builder_dir, "build_skia.py")
+     build_cmd = [sys.executable, build_skia_py, build_dir]
++    build_cmd.append("--no-virtualenv")
++    build_cmd.append("--no-fetch-gn")
++    build_cmd += ["--gn-path", "/usr/bin/gn"]
+ 
+     if inside_sdist:
+         build_cmd.append("--no-sync-deps")
