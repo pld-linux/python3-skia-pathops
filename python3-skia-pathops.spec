@@ -7,7 +7,7 @@ Summary:	Boolean operations on paths using the Skia library
 Summary(pl.UTF-8):	Operacje logiczne na ścieżkach przy użyciu biblioteki Skia
 Name:		python3-skia-pathops
 Version:	0.7.2
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/skia-pathops/
