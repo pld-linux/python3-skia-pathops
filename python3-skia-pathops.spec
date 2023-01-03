@@ -1,4 +1,4 @@
-# TODO: system skia? (BUILD_SKIA_FROM_SOURCE=0, BR: skia.pc)
+# TODO: system skia? (BUILD_SKIA_FROM_SOURCE=0, BR: skia.pc, pkgconfig)
 #
 # Conditional build:
 %bcond_without	tests	# unit tests
@@ -6,14 +6,13 @@
 Summary:	Boolean operations on paths using the Skia library
 Summary(pl.UTF-8):	Operacje logiczne na ścieżkach przy użyciu biblioteki Skia
 Name:		python3-skia-pathops
-Version:	0.7.2
-Release:	3
+Version:	0.7.4
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/skia-pathops/
-#Source0:	https://files.pythonhosted.org/packages/source/s/skia-pathops/skia-pathops-%{version}.zip
-Source0:	https://files.pythonhosted.org/packages/60/4e/73eb87157e23169a901f16773ccd7dd44b8394346beeaaab7dcadb187518/skia-pathops-%{version}.zip
-# Source0-md5:	c4455e40f408c1c5931d72dc9f4f2005
+Source0:	https://files.pythonhosted.org/packages/source/s/skia-pathops/skia-pathops-%{version}.zip
+# Source0-md5:	c39fb7d6356b37b7a6373eade7c6c9d1
 Patch0:		%{name}-build.patch
 URL:		https://pypi.org/project/skia-pathops/
 BuildRequires:	gn
@@ -22,6 +21,7 @@ BuildRequires:	ninja
 BuildRequires:	python3-Cython >= 0.28.4
 BuildRequires:	python3-devel >= 1:3.7
 BuildRequires:	python3-setuptools
+BuildRequires:	python3-setuptools_scm
 %if %{with tests}
 BuildRequires:	python3-pytest >= 3.0.0
 BuildRequires:	python3-pytest-cython
