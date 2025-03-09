@@ -46,7 +46,7 @@ różnice, różnice symetryczne).
 
 %prep
 %setup -q -n skia-pathops-%{version}
-%patch0 -p1
+%patch -P 0 -p1
 
 %build
 %py3_build
