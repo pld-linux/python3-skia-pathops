@@ -6,13 +6,13 @@
 Summary:	Boolean operations on paths using the Skia library
 Summary(pl.UTF-8):	Operacje logiczne na ścieżkach przy użyciu biblioteki Skia
 Name:		python3-skia-pathops
-Version:	0.7.4
-Release:	3
+Version:	0.8.0.post2
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/skia-pathops/
-Source0:	https://files.pythonhosted.org/packages/source/s/skia-pathops/skia-pathops-%{version}.zip
-# Source0-md5:	c39fb7d6356b37b7a6373eade7c6c9d1
+Source0:	https://files.pythonhosted.org/packages/source/s/skia-pathops/skia_pathops-%{version}.zip
+# Source0-md5:	ca966c20deeaa87fb5077d19a5d23768
 Patch0:		%{name}-build.patch
 URL:		https://pypi.org/project/skia-pathops/
 BuildRequires:	gn
@@ -45,7 +45,7 @@ wykonującego operacje logiczne na ścieżkach (przecięcia, sumy,
 różnice, różnice symetryczne).
 
 %prep
-%setup -q -n skia-pathops-%{version}
+%setup -q -n skia_pathops-%{version}
 %patch -P 0 -p1
 
 %build
