@@ -19,7 +19,7 @@ BuildRequires:	gn
 BuildRequires:	libstdc++-devel >= 6:5
 BuildRequires:	ninja
 BuildRequires:	python3-Cython >= 0.28.4
-BuildRequires:	python3-devel >= 1:3.7
+BuildRequires:	python3-devel >= 1:3.8
 BuildRequires:	python3-setuptools
 BuildRequires:	python3-setuptools_scm
 %if %{with tests}
@@ -31,7 +31,7 @@ BuildRequires:	python3-pytest-cython
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	unzip
-Requires:	python3-modules >= 1:3.7
+Requires:	python3-modules >= 1:3.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
